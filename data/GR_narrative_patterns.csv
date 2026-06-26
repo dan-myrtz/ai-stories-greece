@@ -1,0 +1,51 @@
+Story_ID,protagonist_gender,protagonist_role,setting,core_conflict,resolution_type
+GR_1,male,weaver,ancient/mythological,vs gods / fate,fails/sacrifices
+GR_2,female,ordinary villager,ancient/mythological,vs gods / fate,returns home
+GR_3,female,weaver,ancient/mythological,community crisis,succeeds/triumphs
+GR_4,female,ordinary villager,unclear,community crisis,saves community
+GR_5,male,weaver,ancient/mythological,quest / adventure,returns home
+GR_6,male,shepherd,unclear,community crisis,succeeds/triumphs
+GR_7,female,adventurer,mixed,quest / adventure,succeeds/triumphs
+GR_8,female,priestess,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_9,female,weaver,ancient/mythological,vs gods / fate,ambiguous
+GR_10,male,weaver,mixed,vs gods / fate,succeeds/triumphs
+GR_11,female,adventurer,ancient/mythological,quest / adventure,fails/sacrifices
+GR_12,male,adventurer,ancient/mythological,quest / adventure,ambiguous
+GR_13,female,priestess,ancient/mythological,community crisis,succeeds/triumphs
+GR_14,female,priestess,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_15,male,fisherman,mixed,love / loyalty,ambiguous
+GR_16,male,fisherman,ancient/mythological,community crisis,succeeds/triumphs
+GR_17,male,royalty,ancient/mythological,quest / adventure,ambiguous
+GR_18,male,unspecified,ancient/mythological,quest / adventure,ambiguous
+GR_19,female,ordinary villager,ancient/mythological,vs gods / fate,saves community
+GR_20,unclear,ordinary villager,ancient/mythological,vs gods / fate,returns home
+GR_21,female,ordinary villager,mixed,community crisis,fails/sacrifices
+GR_22,male,adventurer,mixed,vs gods / fate,ambiguous
+GR_23,male,priestess,ancient/mythological,vs gods / fate,ambiguous
+GR_24,female,adventurer,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_25,female,warrior,mixed,community crisis,saves community
+GR_26,female,fisherman,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_27,female,weaver,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_28,female,ordinary villager,ancient/mythological,vs gods / fate,saves community
+GR_29,female,weaver,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_30,female,adventurer,mixed,community crisis,saves community
+GR_31,female,ordinary villager,mixed,vs gods / fate,returns home
+GR_32,female,priestess,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_33,female,ordinary villager,unclear,community crisis,ambiguous
+GR_34,female,priestess,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_35,unclear,ordinary villager,ancient/mythological,community crisis,succeeds/triumphs
+GR_36,female,ordinary villager,ancient/mythological,community crisis,succeeds/triumphs
+GR_37,female,ordinary villager,ancient/mythological,vs gods / fate,ambiguous
+GR_38,female,priestess,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_39,female,ordinary villager,ancient/mythological,community crisis,returns home
+GR_40,female,warrior,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_41,female,adventurer,ancient/mythological,quest / adventure,succeeds/triumphs
+GR_42,male,shepherd,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_43,female,royalty,ancient/mythological,vs gods / fate,saves community
+GR_44,female,priestess,ancient/mythological,vs gods / fate,returns home
+GR_45,male,weaver,ancient/mythological,community crisis,fails/sacrifices
+GR_46,male,ordinary villager,ancient/mythological,community crisis,succeeds/triumphs
+GR_47,female,unspecified,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_48,female,priestess,ancient/mythological,vs gods / fate,succeeds/triumphs
+GR_49,female,shepherd,ancient/mythological,community crisis,saves community
+GR_50,female,ordinary villager,ancient/mythological,vs gods / fate,ambiguous
