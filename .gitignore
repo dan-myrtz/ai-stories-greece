@@ -57,3 +57,9 @@ node_modules/
 src/.observablehq/cache/
 src/vendor/
 
+# The bare `lib/` rule in the Python section above also matches
+# src/data/lib/ (gitignore patterns without a slash match at any depth) —
+# un-ignore it explicitly since it holds real source (corpus.js).
+!src/data/lib/
+!src/data/lib/*
+
