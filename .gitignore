@@ -51,3 +51,9 @@ desktop.ini
 # Distribution / packaging
 .cache/
 *.log
+
+# Node / Observable Framework
+node_modules/
+src/.observablehq/cache/
+src/vendor/
+

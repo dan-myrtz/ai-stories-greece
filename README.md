@@ -5,6 +5,8 @@ This is a personal exploratory research project analysing 50 AI-generated storie
 
 The analysis is ongoing. New notebooks, comparisons, and visualisations will be added over time.
 
+**Live site:** [dan-myrtz.github.io/ai-stories-greece](https://dan-myrtz.github.io/ai-stories-greece/) — an interactive, scrollytelling visualization of the findings below, with a searchable browser for all 50 stories. Source in `src/`, built with [Observable Framework](https://observablehq.com/framework/).
+
 ---
 
 ## Background & motivation
