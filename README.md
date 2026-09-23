@@ -1,7 +1,5 @@
 # AI Stories: Greece
 
-> *What does an LLM imagine when asked to write a Greek story?*
-
 This is a personal exploratory project. I came across the [AI STORIES project](https://www.uib.no/en/cdn/169711/ai-stories) at the University of Bergen, found the question it asks genuinely interesting, and wanted to look at the Greek material myself. It analyses the 50 stories generated for Greece in Rettberg and Wigers' dataset of stories produced by `gpt-4o-mini` for 252 nationalities (DOI: [10.18710/VM2K4O](https://doi.org/10.18710/VM2K4O), CC0 1.0). The analysis is ongoing; notebooks, comparisons, and visualisations will be added over time.
 
 **Live site:** [dan-myrtz.github.io/ai-stories-greece](https://dan-myrtz.github.io/ai-stories-greece/), an interactive scrollytelling visualisation of the findings below, with a searchable browser for all 50 stories. Source in `src/`, built with [Observable Framework](https://observablehq.com/framework/).
@@ -66,15 +64,52 @@ Each story was generated with the prompt `"Write a 1500 word potential Greek sto
 - A dominant plot template emerges: a **young woman** (often named *Callista* or *Elara*) in a village setting faces a divine or communal crisis and triumphs.
 - Protagonist names (*Callista*, *Elara*, *Lysander*) have genuine ancient anchors but are marginal in the canon and rare in modern Greek naming. Their real circulation is Anglophone fantasy fiction, and for *Elara*, LLM-generated fiction itself, where it is a documented cross-genre stock name. Everyday Greek names never appear.
 - The emotional vocabulary (*heart*, *voice*, *feel*, *love*) is the affective register of contemporary Anglophone popular fiction, draped over an ostensibly ancient setting.
-- The model's Greece is a **literary genre**, a cinematic antiquity assembled from the Western imaginary of Hellenism, with the country's present erased.
+- The model's Greece is a **literary genre**, a cinematic antiquity, with the country's present absent. Why this is so is treated as an open question below.
 
-## Framing
+## Framing: a working hypothesis
 
-The pattern above is not a gap in the model's knowledge of Greece. It is a faithful rendering of how "Greece" circulates in Anglophone cultures; an image produced by what Michael Herzfeld calls crypto-colonialism: a nation never formally colonised, but pressed from its founding into performing the role the West wrote for it. In Greece's case, a living ancestor of European civilisation. And he calls the result disemia: the double register Greeks have navigated ever since, an outward-facing classical ideal staged for Western approval, and an inward-facing, everyday Greekness that the ideal has no room for.
+The findings above describe what the model produces. Explaining *why* it produces this Greece is a separate question, and the current data (50 stories, one model, one prompt) cannot settle it. This section sets out the interpretive hypothesis that guides the analysis, together with the explanations it competes with.
 
-Read through that lens, the corpus is doing something more interesting than "getting Greece wrong." The model reproduces the first register and erases the second. It operationalises, at scale, an imaginary of Greece that predates machine learning by two centuries. This is also why the analysis treats *authenticity* as an object of study rather than a measuring stick: authenticity is a claim communities make, contest and police, not a property a text possesses. The question this repo asks is not "how Greek are these stories?" but "whose Greece has the model learned to tell?"
+**Hypothesis (H1): a Hellenist imaginary.** One reading draws on Michael Herzfeld's account of Greece as a *crypto-colonial* nation: never colonised by the Western powers, yet shaped from its founding by their expectation that it perform the role of Europe's living classical ancestor. Herzfeld describes the result as *disemia*, a double register that Greeks navigate: an outward-facing classical ideal staged for Western eyes, and an inward-facing, everyday Greekness the ideal has no room for. If this reading holds, the model is not "getting Greece wrong" through lack of knowledge. It reproduces the first register and omits the second, operationalising at scale an imaginary of Greece that predates machine learning by two centuries.
 
-**Framing references:**
+**Competing explanations.**
+
+- **H0, homogenisation.** Following the AI STORIES project's own finding, the model may apply one generic template (village, crisis, young protagonist, triumph) to every nationality, dressing it in whatever each country is most famous for. On this reading, the ancient setting is a costume, and nothing about the result is specific to how Greece has been imagined.
+- **H2, a Southern imaginary.** Herzfeld also criticises *Mediterraneanism*, the habit of rendering the European South as timeless, rural, family-bound and pre-modern. The model may be reproducing this broader image of the South rather than a Greece-specific one.
+
+**What would tell them apart.** The three explanations predict different results once Greece is compared with other countries:
+
+| If… | then we would expect… |
+|---|---|
+| H0 holds | similar templates everywhere, with antiquity appearing wherever a country has a famous one |
+| H1 holds | a classicising skew (ancient settings, classical-sounding names) that is markedly stronger for Greece than for its neighbours |
+| H2 holds | a shared rural, timeless, pre-modern rendering across Southern European countries, whether or not they have a famous antiquity |
+
+None of these tests can show *where* the model learned its image of Greece, since the training data is not available. They can show whether the pattern is specific to Greece, shared across the South, or general to the model.
+
+Treating the question this way is also why the analysis handles *authenticity* as an object of study rather than a measuring stick: authenticity is a claim communities make, contest and police, not a property a text possesses. The guiding question is not "how Greek are these stories?" but "whose Greece does the model imagine, and is that image specific to Greece?"
+
+## How this repository grows
+
+This is a living repository. The analysis is extended in stages, and the README is updated as each stage is completed. Findings should be read as provisional until the comparative stages are done.
+
+**Next stage: the European South.** The source dataset covers 252 nationalities, so the tests in the table above can be run on the same data, generated with the same prompt and model. The planned comparison set is:
+
+- **Italy**, the closest parallel: a country with a famous classical antiquity and its own long history as a destination of the Western classical gaze
+- **Spain** and **Portugal**, Southern European countries whose international image rests less on classical antiquity
+- **Cyprus** and **Malta**, small Mediterranean states with layered colonial histories
+
+The set may widen later (for example, to non-European countries with famous antiquities such as Egypt), to separate "Southern" effects from "ancient-heritage" effects.
+
+**How new stages are added:**
+
+- Each stage gets its own numbered notebook (`02_european_south.ipynb`, and so on). Earlier notebooks are not rewritten.
+- New country data follows the existing naming pattern (`IT_stories.csv`, `ES_stories.csv`, …) in `data/`.
+- The coding scheme in `CODEBOOK.md` is applied unchanged across countries, so results are comparable. Any change to the codebook is recorded there with its date.
+- When a stage changes a finding, the Key findings section is updated and the change is noted, rather than silently overwritten.
+
+## References
+- Cassano, F. (2012). *Southern Thought and Other Essays on the Mediterranean.* Fordham University Press.
 - Gourgouris, S. (1996). *Dream Nation: Enlightenment, Colonization and the Institution of Modern Greece.* Stanford University Press.
 - Hamilakis, Y. (2007). *The Nation and Its Ruins: Antiquity, Archaeology, and National Imagination in Greece.* Oxford University Press.
 - Herzfeld, M. (1982). *Ours Once More: Folklore, Ideology, and the Making of Modern Greece.* University of Texas Press.
